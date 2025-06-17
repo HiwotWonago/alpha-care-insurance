@@ -1,0 +1,9 @@
+stages:
+  eda:
+    cmd: python src/eda.py
+    deps:
+      - data/processed/cleaned_data.parquet
+      - src/eda.py
+    outs:
+      - reports/figures
+      - models
